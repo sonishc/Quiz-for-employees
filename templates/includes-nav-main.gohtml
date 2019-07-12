@@ -1,0 +1,26 @@
+{{define "nav-main"}}
+
+<style >
+nav > ul > li {
+  display: inline;
+  text-decoration: none;
+}
+nav > ul > li::after {
+  content: " |";
+}
+nav > ul > li:last-child:after
+{
+  content: '';
+}
+</style>
+
+<nav>
+  <ul>
+    <li><a href="/index">INDEX</a></li>
+    <li><a href="/about">ABOUT</a></li>
+    <li><a href="/contact">CONTACT</a></li>
+    <li><a href="apply">APPLY</a></li>
+  </ul>
+</nav>
+
+{{end}}

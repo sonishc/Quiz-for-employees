@@ -1,0 +1,24 @@
+{{ template "header" .}}
+
+<h1>APPLY</h1>
+
+{{ template "nav-main" }}
+
+<div>
+  {{if .FirstName}}
+  <span>Hi, {{.FirstName}}</span>
+  {{end}}
+</div>
+
+<div style="width: 200px;">
+  <form action="/apply" method="post">
+    <div class="form-group">
+      <label for="fname">First name</label>
+      <input type="text" name="fname" class="form-control">
+    </div>
+
+    <input type="submit" class="btn btn-primary">
+  </form>
+</div>
+
+{{ template "footer" }}
